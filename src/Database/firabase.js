@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyABWBkv_AyXHgd4c1KSgxkOSpjQumiGqP0",
-    authDomain: "taskify-badeb.firebaseapp.com",
-    projectId: "taskify-badeb",
-    storageBucket: "taskify-badeb.appspot.com",
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
     messagingSenderId: "846954311206",
-    appId: "1:846954311206:web:371662db9f9fd12e7e00e7"
+    appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase
